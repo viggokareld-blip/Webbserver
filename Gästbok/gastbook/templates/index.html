@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Gästbok</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Gästbok</h1>
+
+    <form action="/skicka" method="post">
+        <input type="text" name="namn" required>
+
+        <label>Meddelande:</label>
+        <textarea name="meddelande" required></textarea>
+
+        <button type="submit">Skicka</button>
+
+    </form>
+
+    <h2>Inlägg</h2>
+
+    {% for rad in inlagg[::-1] %}
+        <div class="post">
+            {{ rad }}
+        </div>
+    {% endfor %}
+
+</div>
+
+</body>
+</html>
