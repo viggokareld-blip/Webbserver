@@ -1,0 +1,37 @@
+.container {
+    width: 700px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+.post {
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: white;
+}
